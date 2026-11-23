@@ -1,1 +1,86 @@
-<!-- TechNova -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tittle>TechNova - Tienda de tecnología</tittle>
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <img src="assets/logo.png"> alt="Logo de TechNova"
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#comparativa">Comparar</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+           <h1>TechNova</h1>
+           <p>Móviles, portátiles y tablets al mejor precio</p>
+        </section>
+
+        <section id="productos">
+           <h2>Productos</h2>
+           <p>Aquí apareceran nuestros productos</p>
+        </section>
+
+        <section id="comparativa">
+           <h2>comparativa</h2>
+           <table>
+              <tr>
+                <th>Productos</th>
+                <th>Categoría</th>
+                <th>precio</th>
+              </tr>
+              <tr>
+                 <td>MacBook Air</td>
+                 <td>Portátil</td>
+                 <td>1099 €</td>
+             </tr>
+
+             <tr>
+                <td>iPad Air</td>
+                <td>Tablet</td>
+                <td>649 €</td>
+
+            </tr>
+           </table>
+        </section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <h3>Envíanos tu consulta</h3>
+    <form>
+        <label for="nombre">nombre</label>
+        <input type="text" id="nombre" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+
+        <label for="producto">Producto de interés</label>
+        <select id="producto" required>
+            <option value="">Elige una opción</option>
+            <option value="movil">Móvil</option>
+            <option value="portatil">Portátil</option>
+            <option value="tablet">Tablet</option>
+        </select>
+
+        <button type="submint">Enviar</button>
+        </form>
+</section>
+
+    </main>
+    <footer>
+        <p> 2026 TechNova. Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
