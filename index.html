@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>TechNova - Tienda de tecnología</tittle>
+    <title>TechNova - Tienda de tecnología</title>
     <link rel="icon" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
+    <script src="js/productos.js" defer></script>
+    <script src="js/buscador.js" defer></script>
 </head>
 <body>
 
     <header>
-        <img src="assets/logo.png"> alt="Logo de TechNova"
+        <img src="assets/logo.png" alt="Logo de TechNova">
         <nav>
-            <a href="#inicio">Inicio</a>
+            <a href="#inicio" class="activo">Inicio</a>
             <a href="#productos">Productos</a>
             <a href="#comparativa">Comparar</a>
             <a href="#contacto">Contacto</a>
         </nav>
+        <div class="botones">
+     <button id="boton-menu" type="button">Menú</button>
+     <button id="boton-modo" type="button">Modo oscuro</button>
+     </div>
     </header>
 
     <main>
@@ -29,7 +37,20 @@
 
         <section id="productos">
            <h2>Productos</h2>
-           <p>Aquí apareceran nuestros productos</p>
+           <div class="filtros">
+  <label for="buscador">Buscar</label>
+  <input type="search" id="buscador" placeholder="Escribe un producto">
+
+  <label for="categoria">Categoría</label>
+  <select id="categoria">
+    <option value="todas">Todas</option>
+    <option value="smartphones">Móviles</option>
+    <option value="laptops">Portátiles</option>
+    <option value="tablets">Tablets</option>
+  </select>
+</div>
+          <p id="estado"></p>
+          <div id="lista"></div>
         </section>
 
         <section id="comparativa">
